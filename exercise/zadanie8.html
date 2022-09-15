@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+		div{
+            color: green; 
+            font-size: 47px;
+		   }
+		</style>
+			
+			<script>
+				var liczba1_osy=prompt("podaj dzień miesiąca stycznia=","");
+				var liczba2_osy=prompt("podaj inny dzień miesiąca stycznia=","");
+				var roznica_osy;
+				var a_osy=parseFloat(liczba1_osy);
+				var b_osy=parseFloat(liczba2_osy);
+				if(a_osy>b_osy)
+				{
+				roznica_osy=(a_osy-b_osy)*60*60*24;
+				}
+				else
+				{
+				roznica_osy=(b_osy-a_osy)*60*60*24;
+				}
+				document.write("<div>ilość sekund = "+ roznica_osy +"sekund<br>");
+			</script>
+
+	</head>
+	<body>
+
+	</body>
+</html>	
