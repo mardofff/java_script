@@ -1,25 +1,68 @@
 <html>
-
 <head>
-<title> strona zaliczeniowa  </title>
-<script language="JavaScript">
-function WinOpen_zad1()
-{
-window.open("zadanie1.html");
-}
-function WinOpen_zad2()
-{
-window.open("zadanie2.html","okienko","toolbar=no,directories=no,menubar=no,height=200,width=700,top=300,left=10");
-}
-</script>
+
+<title> strona zaliczeniowa </title>
+
+<style>
+    body {
+      background-image: url('./gifs/back.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+
+    input {
+      background-color: #2100d9;
+      border: none;
+      color: rgb(247, 247, 247);
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      opacity: 0.6;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+   }
+  input:hover {opacity: 1}
+</style>
+
+    <script language="JavaScript">
+
+        function WinOpen_zad1() {window.open("./exercise/zadanie1.html");}
+        function WinOpen_zad1k() {window.open("./code/zadanie1_kod.html");}
+        function WinOpen_zad2() {window.open("./exercise/zadanie2.html","okienko","toolbar=no,directories=no,menubar=no,height=200,width=700,top=300,left=10");}
+        function WinOpen_zad2k() {window.open("./code/zadanie2_kod.html");}
+        function WinOpen_zad3() {window.open("./exercise/zadanie3.html","okienko");}
+        function WinOpen_zad4() {window.open("./exercise/zadanie4.html","okienko");}
+        function WinOpen_zad5() {window.open("./exercise/zadanie5.html","okienko");}
+        function WinOpen_zad6() {window.open("./exercise/zadanie6.html","okienko");}
+        function WinOpen_zad7() {window.open("./exercise/zadanie7.html","okienko");}
+        function WinOpen_zad8() {window.open("./exercise/zadanie8.html","okienko");}
+        function WinOpen_zad8k() {window.open("./code/zadanie8_kod.html");}
+    </script>
+
 </head>
 
 <body>
-    <p style="background-color: rgb(213, 178, 230); font: 2cm Arial; text-align: right"> Osypenko </p>
-<form>
-<input type="button" name="przycisk" value="zadanie1" onclick="WinOpen_zad1(' ')">
-<input type="button" name="przycisk" value="zadanie2" onclick="WinOpen_zad2(' ')">
-</form>
+
+    <p align="center" style="font-size: 2cm; background: linear-gradient(to left, rgb(159, 84, 234),rgb(86, 86, 237)); font-family: Courier New  ; color: rgb(0, 0, 0);"> OSYPENKO </p>
+
+<form style="text-align: center;">
+
+        <input type="button" name="przycisk" value="zadanie1" onclick="WinOpen_zad1(' ')">
+        <input type="button" name="przycisk" value="zadanie1-kod" onclick="WinOpen_zad1k(' ')">
+        <input type="button" name="przycisk" value="zadanie2" onclick="WinOpen_zad2(' ')">
+        <input type="button" name="przycisk" value="zadanie2-kod" onclick="WinOpen_zad2k(' ')">
+        <input type="button" name="przycisk" value="zadanie3" onclick="WinOpen_zad3(' ')">
+    <br>
+        <input type="button" name="przycisk" value="zadanie4" onclick="WinOpen_zad4(' ')">
+        <input type="button" name="przycisk" value="zadanie5" onclick="WinOpen_zad5(' ')">
+        <input type="button" name="przycisk" value="zadanie6" onclick="WinOpen_zad6(' ')">
+        <input type="button" name="przycisk" value="zadanie7" onclick="WinOpen_zad7(' ')">
+        <input type="button" name="przycisk" value="zadanie8" onclick="WinOpen_zad8(' ')">
+        <input type="button" name="przycisk" value="zadanie8-kod" onclick="WinOpen_zad8k(' ')">
 
 </body>
 </html>
