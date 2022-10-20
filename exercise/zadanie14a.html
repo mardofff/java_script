@@ -1,0 +1,36 @@
+<html>
+<body>
+<div style="color:red;font-size:47px;">
+<script>
+var b_osy=prompt("b=","");
+var b_osy=parseFloat(b_osy);
+
+var c_osy=prompt("c=","");
+var c_osy=parseFloat(c_osy);
+
+var pitagoras;
+var a_osy;
+
+pitagoras=Math.pow(c_osy,2)-Math.pow(b_osy,2);
+a_osy=Math.sqrt(pitagoras,2);
+
+var sin_α;
+var sin_α=parseFloat(sin_α);
+sin_α=a_osy/c_osy;
+
+var cos_α;
+var cos_α=parseFloat(cos_α);
+cos_α=b_osy/c_osy;
+
+var tgα;
+var tgα=parseFloat(tgα);
+tgα=a_osy/b_osy;
+
+var ctgα;
+var ctgα=parseFloat(ctgα);
+ctgα=b_osy/a_osy;
+document.write("sin α="+sin_α.toFixed(2)+"<br>cos α="+cos_α.toFixed(2)+"<br>tgα="+tgα.toFixed(2)+"<br>ctgα="+ctgα.toFixed(2)+"<br>");
+ </script>
+ </div>
+</body>
+</html> 

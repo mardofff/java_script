@@ -1,0 +1,60 @@
+
+<html>
+<head>
+<title>zadanie 19</title>
+<meta charset="UTF-8">
+     <script language="JavaScript">
+function pole_osyowska(a_osy,b_osy)
+{
+ a_osy=parseFloat(a_osy);
+ b_osy=parseFloat(b_osy);
+ pole_wynik_osy=a_osy*b_osy;
+ document.getElementsByName('pole')[0].value=pole_wynik_osy.toFixed(2);
+ alert("Pc="+pole_wynik_osy.toFixed(2)+" cm^2");
+ wprowadz_pole_osy.innerHTML="Pc="+pole_wynik_osy.toFixed(2)+" cm^2"+"<br>";
+}
+function obwod_osy(a_osy,b_osy)
+{
+ a_osy=parseFloat(a_osy);
+ b_osy=parseFloat(b_osy);
+ obwod_osy=2*a_osy+2*b_osy;
+ document.getElementsByName('obw')[0].value=obwod_osy.toFixed(2);
+ alert("Obwod="+obwod_osy.toFixed(2)+" cm");
+ wprowadz_obw_osy.innerHTML="Obwód="+obwod_osy.toFixed(2)+" cm";
+}
+function okno_zamknij_osyowska_kod()
+{
+window.close()
+}
+        </script>
+
+</head>
+<body>
+    obliczanie pola oraz obwodu prostokąta
+<br>
+<br>
+    <form name="formularz" action="..." onsubmit="pole_osyowska(this.a_dana_osy.value,this.b_dana_osy.value);
+obwod_osy(this.a_dana_osy.value,this.b_dana_osy.value);return false">
+Podaj a=
+    <input size="6" name="a_dana_osy">
+Podaj b=
+    <input size="6" name="b_dana_osy">
+<br>
+<br>
+    <input type="submit" Value="oblicz" >
+<br>
+<br>
+Pole=
+    <input size="6" name="pole">
+Obwód=
+    <input size="6" name="obw">
+</form>
+<table>
+    <tr id="wprowadz_pole_osy"></tr>
+    <tr id="wprowadz_obw_osy"></tr>
+<br/>
+<br/>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_osyowska_kod()"/>
+</table>
+</body>
+</html>
