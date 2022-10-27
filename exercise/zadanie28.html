@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+    <script type="text/javascript">
+    function aut(kolor_k,marka_k,nazwa_k)//początek konstruktora
+    {
+    this.kolor=kolor_k;
+    this.nazwa=nazwa_k;
+    this.marka=marka_k;
+    }//koniec konstruktora
+    
+    aut.prototype.wypisz = function () //definicja metody
+    {
+    alert(this.kolor + ' ' + this.nazwa+ ' ' + this.marka);
+    };
+    
+    var auto1 = new aut("zielony", "autobus", "MAN"); // nowy obiekt auto1
+    var auto2 = new aut("niebieski", "autobus", "IKARUS");
+    auto1.wypisz(); // uruchomienie metody wypisz() dotyczącej auto 1
+    auto2.wypisz();
+    document.write("dostęp do właściwości"+"<br>");
+    // poniżej dostęp do pól auto1
+    document.write("autobus pierwszy"+" "+auto1.kolor+" "+auto1.nazwa+" "+auto1.kolor+"<br>");
+    document.write("autobus drugi"+" "+auto2.kolor+" "+auto2.nazwa+" "+auto2.kolor+"<br>");
+    auto1.rozmiar="duzy";
+    auto2.rozmiar="duzy";
+    aut.autobus_pokaz_osypenko2=function() {alert("rozmiar: " + auto1.rozmiar )}
+    aut.autobus_pokaz_osypenko2();
+    aut.autobus_pokaz_osypenko3=function() {alert("rozmiar: " + auto2.rozmiar )}
+    aut.autobus_pokaz_osypenko3();
+    </script>
+    </head>
+    <body>
+    <br>
+    programowanie obiektowe 
+    </body>
+    </html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript">
+
+var autobus = {
+nazwa: 'autobus',
+marka: 'HINO',
+
+autobus_wyswietl_osypenko: function ()
+{
+document.write(this.nazwa + ' ' + this.marka )
+}
+}
+autobus.autobus_wyswietl_osypenko();
+
+autobus.kolor="zielony";
+autobus.autobus_wyswietl_osypenko2=function() {alert('kolor: ' + this.kolor )}
+autobus.autobus_wyswietl_osypenko2();
+</script>
+</head>
+<body>
+<br>
+ programowanie obiektowe 
+</body>
+</html>
