@@ -1,0 +1,25 @@
+<html>
+<body>
+<div style="color:red;font-size:40px;">
+ <script language="JavaScript">
+var r_osy=prompt("Podaj r","");
+var r_osy=parseFloat(r_osy);
+var i;
+var k;
+var ile;
+ile=0;
+var d;
+  for(i=-Math.round(r_osy)-1;i<= Math.round(r_osy)+1; i++)
+  {
+  for(k=-Math.round(r_osy)-1;k<=Math.round(r_osy)+1;k++)
+  {
+d=Math.sqrt(i*i+k*k);
+if(d<=r_osy) { ile++; }
+  }
+document.write("<br>");
+  }
+document.write("ilość punktów kratowych:"+ile+"");
+ </script>
+</div>
+</body>
+</html>

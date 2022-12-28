@@ -1,0 +1,34 @@
+<html>
+<body>
+<div style="color:red;font-size:40px;">
+ <script language="JavaScript">
+ var p_osy=prompt("podaj pierwsza liczbe","");
+ var d_osy=prompt("podaj druga liczbe","");
+ var pocz_osy;
+ var tekst_osy="mariia osypenko";
+ var zwiek_osy;
+ var i;
+  var a_osy=parseFloat(p_osy);
+  var b_osy=parseFloat(d_osy);
+ 
+  if(p_osy<d_osy) {
+  for(i=p_osy;i<d_osy;i++){
+  if(i % 2 == 0){
+document.write("<p style=\"font-size:40px; color: green;\"><br>"+i+"<br></p>")
+}
+}
+}
+  if(p_osy>d_osy) {
+  for(i=p_osy;i>d_osy;i--){
+  if(i % 2 == 0){
+document.write("<p style=\"font-size:20px; color: blue;\"><br>"+i+"<br></p>")
+}
+}
+}
+if(p_osy==d_osy)
+document.write("brak rozwiazan")
+
+ </script>
+</div>
+</body>
+</html>

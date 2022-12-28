@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<body>
+<textarea name="nazwa" cols="500" rows="60" disabled>
+<html>
+<body>
+<div style="color:red;font-size:40px;">
+ <script language="JavaScript">
+ var p_osy=prompt("podaj pierwsza liczbe z przedzialu <20,60>","");
+ var d_osy=prompt("podaj druga liczbe z przedzialu <20,60>","");
+ var pocz_osy;
+ var tekst_osy="osykowski szymon";
+ var zwiek_osy;
+ var i;
+  var a_osy=parseFloat(p_osy);
+  var b_osy=parseFloat(d_osy);
+  if(p_osy>60 || d_osy>60 || p_osy<20 || d_osy<20)
+  document.write("zle wartosci");
+  if(p_osy<d_osy) {
+  for(i=p_osy;i<d_osy;i++){
+document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_osy+"<br></p>")
+}
+}
+  if(d_osy<p_osy) {
+  for(i=p_osy;i>d_osy;i--){
+document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_osy+"<br></p>")
+}
+}
+ </script>
+</div>
+</body>
+</html>
+</textarea>
+</body>
+</html>
